@@ -1,0 +1,68 @@
+<div class="wrapper">
+  <div class="genshin-card">
+    <div 
+    [ngClass]="{
+      'mondstadt' : personagem.region == 'Mondstadt',
+      'inazuma' : personagem.region == 'Inazuma',
+      'liyue' : personagem.region == 'Liyue',
+      'sumeru' : personagem.region == 'Sumeru',
+      'snezhnaya' : personagem.region == 'Snezhnaya',
+      'none' : personagem.region == ''
+      }"
+    class="genshin-card__image genshin-card__image--character mondstadt" 
+    >
+      <img [src]="personagem.images['portrait'] || personagem.images['cover1'] || personagem.images['hoyolab-avatar']  "
+        [alt]="personagem.fullname" />
+    </div>
+    <div class="genshin-card__level genshin-card__level--barbarian">{{personagem.region || 'NONE'}}</div>
+    <div class="genshin-card__unit-name">{{personagem.fullname}}</div>
+    <div class="genshin-card__unit-description">
+      {{personagem.description}}
+    </div>
+
+    <div class="genshin-card__unit-stats clearfix"
+    [ngClass]="{
+        'anemo-bg' : personagem.element == 'Anemo',
+        'cryo-bg' : personagem.element == 'Cryo',
+        'dendro-bg' : personagem.element == 'Dendro',
+        'electro-bg' : personagem.element == 'Electro',
+        'geo-bg' : personagem.element == 'Geo',
+        'hydro-bg' : personagem.element == 'Hydro',
+        'pyro-bg' : personagem.element == 'Pyro',
+        'traveler-bg' : personagem.element == 'Indisponível'
+    }">
+      <div class="one-third">
+          <div class="stat elem-size ms-2 py-0"
+          [tippy]="personagem.element"
+          [ngClass]="{
+            'anemo' : personagem.element == 'Anemo',
+            'cryo' : personagem.element == 'Cryo',
+            'dendro' : personagem.element == 'Dendro',
+            'electro' : personagem.element == 'Electro',
+            'geo' : personagem.element == 'Geo',
+            'hydro' : personagem.element == 'Hydro',
+            'pyro' : personagem.element == 'Pyro',
+            'indisponivel' : personagem.element == 'Indisponível'
+          }"></div>
+      </div>
+
+      <div class="one-third">
+        <div class="stat elem-size ms-2 py-0"
+        [tippy]="personagem.weapontype"
+        [ngClass]="{
+        'arco' : personagem.weapontype == 'Arco',
+        'catalisador' : personagem.weapontype == 'Catalisador',
+        'espadao' : personagem.weapontype == 'Espadão',
+        'lanca' : personagem.weapontype == 'Lança',
+        'espada' : personagem.weapontype == 'Espada'
+        }"></div>
+      </div>
+
+      <div class="one-third no-border mt-3">
+        <div class="stat mt-2">{{personagem.rarity}} <i class="fa-sharp fa-solid fa-star text-warning"></i></div>
+      </div>
+
+    </div>
+
+  </div> <!-- end genshin-card-->
+</div> <!-- end wrapper -->

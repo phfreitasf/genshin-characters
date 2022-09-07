@@ -1,0 +1,137 @@
+{
+  "name": "Ganyu",
+  "fullname": "Ganyu",
+  "title": "Defensora Devota",
+  "description": "Secretária do Pavilhão Yuehai. O sangue da besta iluminada Qilin flui nas suas veias.",
+  "rarity": "5",
+  "element": "Cryo",
+  "weapontype": "Arco",
+  "substat": "Dano Crítico",
+  "gender": "Feminino",
+  "body": "GIRL",
+  "association": "LIYUE",
+  "region": "Liyue",
+  "affiliation": "Pavilhão Yuehai",
+  "birthdaymmdd": "12/2",
+  "birthday": "2 de dezembro",
+  "constellation": "Sinae Unicornis",
+  "cv": {
+    "english": "Jennifer Losi",
+    "chinese": "林簌",
+    "japanese": "上田丽奈",
+    "korean": "Kim Seon-hye"
+  },
+  "costs": {
+    "ascend1": [{
+      "name": "Mora",
+      "count": 20000
+    }, {
+      "name": "Lasca de Jade Shivada",
+      "count": 1
+    }, {
+      "name": "Qingxin",
+      "count": 3
+    }, {
+      "name": "Néctar da Flor Gigante",
+      "count": 3
+    }],
+    "ascend2": [{
+      "name": "Mora",
+      "count": 40000
+    }, {
+      "name": "Fragmento de Jade Shivada",
+      "count": 3
+    }, {
+      "name": "Núcleo de Geada",
+      "count": 2
+    }, {
+      "name": "Qingxin",
+      "count": 10
+    }, {
+      "name": "Néctar da Flor Gigante",
+      "count": 15
+    }],
+    "ascend3": [{
+      "name": "Mora",
+      "count": 60000
+    }, {
+      "name": "Fragmento de Jade Shivada",
+      "count": 6
+    }, {
+      "name": "Núcleo de Geada",
+      "count": 4
+    }, {
+      "name": "Qingxin",
+      "count": 20
+    }, {
+      "name": "Néctar Brilhante",
+      "count": 12
+    }],
+    "ascend4": [{
+      "name": "Mora",
+      "count": 80000
+    }, {
+      "name": "Pedaço de Jade Shivada",
+      "count": 3
+    }, {
+      "name": "Núcleo de Geada",
+      "count": 8
+    }, {
+      "name": "Qingxin",
+      "count": 30
+    }, {
+      "name": "Néctar Brilhante",
+      "count": 18
+    }],
+    "ascend5": [{
+      "name": "Mora",
+      "count": 100000
+    }, {
+      "name": "Pedaço de Jade Shivada",
+      "count": 6
+    }, {
+      "name": "Núcleo de Geada",
+      "count": 12
+    }, {
+      "name": "Qingxin",
+      "count": 45
+    }, {
+      "name": "Néctar Elemental",
+      "count": 12
+    }],
+    "ascend6": [{
+      "name": "Mora",
+      "count": 120000
+    }, {
+      "name": "Gema de Jade Shivada",
+      "count": 6
+    }, {
+      "name": "Núcleo de Geada",
+      "count": 20
+    }, {
+      "name": "Qingxin",
+      "count": 60
+    }, {
+      "name": "Néctar Elemental",
+      "count": 24
+    }]
+  },
+  "images": {
+    "card": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png",
+    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Ganyu_Portrait.png",
+    "icon": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ganyu.png",
+    "sideicon": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ganyu.png",
+    "cover1": "https://webstatic.hoyoverse.com/upload/contentweb/2022/07/22/1ae0d0aaad9ee9b55652ea7ec67f0465_3602224572622981451.png",
+    "cover2": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210105/2021010519280045054.png",
+    "hoyolab-avatar": "https://img-os-static.hoyolab.com/communityWeb/upload/4af4adf192a35db2dd76d9718acc7bc8.png",
+    "nameicon": "UI_AvatarIcon_Ganyu",
+    "nameiconcard": "UI_AvatarIcon_Ganyu_Card",
+    "namegachasplash": "UI_Gacha_AvatarImg_Ganyu",
+    "namegachaslice": "UI_Gacha_AvatarIcon_Ganyu",
+    "namesideicon": "UI_AvatarIcon_Side_Ganyu"
+  },
+  "url": {
+    "fandom": "https://genshin-impact.fandom.com/wiki/Ganyu"
+  },
+  "version": "1.2"
+}

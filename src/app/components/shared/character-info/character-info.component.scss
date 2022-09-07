@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+$border-radius-size: 14px;
+
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+
+.genshin-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.genshin-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+
+.genshin-card__image--character {
+  img {
+    image-rendering: optimizeSpeed;
+    object-fit: fill;
+    margin: auto;
+    height: 120%;
+    top:-20%;
+    position: relative;    
+    max-width: 100%;
+  }
+}
+
+
+.genshin-card__level {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+
+.genshin-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.genshin-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+  min-height: 200px;
+}
+
+
+
+.genshin-card__unit-stats {
+  
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: $border-radius-size;
+  border-bottom-right-radius: $border-radius-size;
+  
+  .one-third {
+    width: 33%;
+    float: left;
+    padding: 10px 10px;
+  }
+  
+  sup {
+    position: absolute;
+    bottom: 4px; 
+    font-size: 45%;
+    margin-left: 2px;
+  }
+  
+  .stat {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+// Cidades
+.mondstadt {
+  background: url('../../../../assets/images/background_cards/mondstat.png');
+}
+.inazuma {
+  background: url('../../../../assets/images/background_cards/inazuma.jpg');
+}
+.liyue {
+  background: url('../../../../assets/images/background_cards/liyue.png');
+}
+.sumeru {
+  background: url('../../../../assets/images/background_cards/sumeru.png');
+}
+.snezhnaya {
+  background: url('../../../../assets/images/background_cards/snezhnaya.png');
+}
+.none {
+  background: url('../../../../assets/images/background_cards/none.png');
+}
+
+
+// Elementos
+.elem-size
+{
+  background-size: cover ;
+  min-height: 70px;
+  background-repeat: no-repeat;
+}
+.anemo {
+  background-image: url('../../../../assets/images/visions/Anemo.svg');
+}
+.cryo {
+  background-image: url('../../../../assets/images/visions/Cryo.svg');
+}
+.dendro {
+  background-image: url('../../../../assets/images/visions/Dendro.svg');
+}
+.electro {
+  background-image: url('../../../../assets/images/visions/Electro.svg');
+}
+.geo {
+  background-image: url('../../../../assets/images/visions/Geo.svg');
+}
+.hydro {
+  background-image: url('../../../../assets/images/visions/Hydro.svg');
+}
+.pyro {
+  background-image: url('../../../../assets/images/visions/Pyro.svg');
+}
+.indisponivel {
+  background-image: url('../../../../assets/images/visions/indisponivel.png');
+}
+
+//Armas
+.arco {
+  background-image: url('../../../../assets/images/weapon_type/Weapon-class-bow-icon.webp');
+}
+.catalisador {
+  background-image: url('../../../../assets/images/weapon_type/Weapon-class-catalyst-icon.webp');
+}
+.espadao {
+  background-image: url('../../../../assets/images/weapon_type/Weapon-class-claymore-icon.webp');
+}
+.lanca {
+  background-image: url('../../../../assets/images/weapon_type/Weapon-class-polearm-icon.webp');
+}
+.espada {
+  background-image: url('../../../../assets/images/weapon_type/Weapon-class-sword-icon.webp');
+}
+
+//Cor stats
+.anemo-bg {
+  background-color: #515847;
+}
+.cryo-bg {
+  background-color: #0f5390;
+}
+.dendro-bg {
+  background-color: #48710e;
+}
+.electro-bg {
+  background-color: #40308F;
+}
+.geo-bg {
+  background-color: #9d590c;
+}
+.hydro-bg {
+  background-color: #1d8beb;
+}
+.pyro-bg {
+  background-color: #8c0909ea;
+}
+.traveler-bg {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFAC 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
