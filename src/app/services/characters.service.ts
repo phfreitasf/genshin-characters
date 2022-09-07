@@ -10,6 +10,6 @@ export class CharactersService {
   constructor(private http: HttpClient) { }
 
   getCharacters (){
-    return this.http.get(`${this.apiUrl}character`)
+    return this.http.get(`${this.apiUrl}character/`)
   }
 }
