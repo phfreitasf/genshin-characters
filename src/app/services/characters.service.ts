@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CharactersService {
-  apiUrl = 'http://genshinapi.ddns.net:3000/'
+  apiUrl = 'https://genshinapi.ddns.net:3000/'
 
   constructor(private http: HttpClient) { }
 
