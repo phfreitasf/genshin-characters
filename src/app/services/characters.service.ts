@@ -6,12 +6,9 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class CharactersService {
-<<<<<<< HEAD
   
-=======
-  apiUrl = 'https://genshinapi.ddns.net:3000/'
+  // apiUrl = 'https://genshinapi.ddns.net:3000/'
 
->>>>>>> e042a35bad66a2b1e5bf7b4acf2b0d54854fc0d6
   constructor(private http: HttpClient) { }
 
   getCharacters (){
