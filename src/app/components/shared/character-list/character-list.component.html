@@ -1,5 +1,25 @@
+
 <div class="container">
-<section class="row align-items-center justify-content-center">
-    <app-character-info class="col-auto" *ngFor="let personagem of personagens" [personagem]="personagem"></app-character-info>
-</section>
+  <div class="row justify-content-center align-items-center">
+    <div class="m-auto col-lg-5 my-4">
+
+      <div class="form-floating d-flex justify-content-center">
+        <input 
+            [(ngModel)]="txtFiltro"
+            (ngModelChange)="onInputChange($event)"
+            type="search" 
+            class="form-control form-control-sm rounded-pill w-100 "
+            id="floatingInput" 
+            placeholder="Pesquise por nome, tipo de arma ou elemento" 
+            
+            >
+        <label for="floatingInput">Pesquise por nome, tipo de arma, elemento ou qualquer outra característica</label>
+      </div>
+
+    </div>
+  </div>
+  <section class="row align-items-center justify-content-center">
+    <app-character-info class="col-auto" *ngFor="let personagem of personagensAtivos" [personagem]="personagem">
+    </app-character-info>
+  </section>
 </div>

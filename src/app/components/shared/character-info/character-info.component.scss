@@ -9,13 +9,10 @@ $border-radius-size: 14px;
   text-align: center;
 }
 
-.wrapper {
+.wrapper {  
   padding-top: 40px;
   padding-bottom: 40px;
-  
-  &:focus {
-    outline: 0;
-  }
+
 }
 
 
@@ -30,6 +27,11 @@ $border-radius-size: 14px;
   text-align: center;
   box-shadow: -1px 15px 30px -12px black;
   z-index: 9999;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    }
 }
 
 .genshin-card__image {

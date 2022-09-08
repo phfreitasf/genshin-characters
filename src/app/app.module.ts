@@ -10,6 +10,7 @@ import { CharacterListComponent } from './components/shared/character-list/chara
 
 
 import { TippyModule, tooltipVariation, popperVariation } from '@ngneat/helipopper';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TippyModule, tooltipVariation, popperVariation } from '@ngneat/helipopp
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule,
     TippyModule.forRoot({
