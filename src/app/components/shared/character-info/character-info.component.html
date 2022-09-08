@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <div class="genshin-card">
+  <div class="genshin-card bg-light" (click)="openModal(personagem)">
     <div 
     [ngClass]="{
       'mondstadt' : personagem.region == 'Mondstadt',
@@ -9,14 +9,14 @@
       'snezhnaya' : personagem.region == 'Snezhnaya',
       'none' : personagem.region == ''
       }"
-    class="genshin-card__image genshin-card__image--character mondstadt" 
+    class="genshin-card__image genshin-card__image--character" 
     >
       <img [src]="personagem.images['portrait'] || personagem.images['cover1'] || personagem.images['hoyolab-avatar']  "
         [alt]="personagem.fullname" />
     </div>
-    <div class="genshin-card__level genshin-card__level--barbarian">{{personagem.region || 'NONE'}}</div>
-    <div class="genshin-card__unit-name">{{personagem.fullname}}</div>
-    <div class="genshin-card__unit-description">
+    <div class="genshin-card__char-name">{{personagem.fullname}}</div>
+    <div class="genshin-card__region">Cidade: {{personagem.region || 'Desconhecido'}}</div>
+    <div class="genshin-card__char-description">
       {{personagem.description}}
     </div>
 

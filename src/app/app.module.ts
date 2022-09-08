@@ -7,20 +7,23 @@ import { HttpClientModule } from '@angular/common/http'
 import { CharactersService } from './services/characters.service';
 import { AppRoutingModule } from './app-routing.module';
 import { CharacterListComponent } from './components/shared/character-list/character-list.component';
-
+import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 
 import { TippyModule, tooltipVariation, popperVariation } from '@ngneat/helipopper';
 import { FormsModule } from '@angular/forms';
+import { ModalCharacterComponent } from './components/shared/modal-character/modal-character.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CharacterInfoComponent,
-    CharacterListComponent
+    CharacterListComponent,
+    ModalCharacterComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    MdbModalModule,
     HttpClientModule,
     AppRoutingModule,
     TippyModule.forRoot({

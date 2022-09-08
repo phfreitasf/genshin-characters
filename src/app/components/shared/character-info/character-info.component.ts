@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
 import { Personagem } from 'src/app/services/Model/Characters';
+import { ModalCharacterComponent } from '../modal-character/modal-character.component';
 
 @Component({
   selector: 'app-character-info',
@@ -7,14 +9,21 @@ import { Personagem } from 'src/app/services/Model/Characters';
   styleUrls: ['./character-info.component.scss']
 })
 export class CharacterInfoComponent implements OnInit {
+  modalRef: MdbModalRef<ModalCharacterComponent> | null = null;
+  @Input() personagem!: Personagem
 
-  @Input() personagem!: Personagem 
-
-  constructor() { }
+  constructor(private modalService: MdbModalService) { }
 
   async ngOnInit() {
   }
 
+  openModal(personagem: Personagem) {
+    this.modalRef = this.modalService.open(ModalCharacterComponent, {
+      data : {personagem : personagem},
+      modalClass: 'modal-xl bg-dark'
+    },
+    )
 
+  }
 
 }

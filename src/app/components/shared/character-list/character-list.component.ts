@@ -9,16 +9,22 @@ import { Personagem } from 'src/app/services/Model/Characters';
   styleUrls: ['./character-list.component.scss']
 })
 export class CharacterListComponent implements OnInit, OnChanges {
+  audioTocando: boolean = false
+  audio = new Audio("../../../../assets/music/genshin ost night.mp3")
+
+
   txtFiltro = ''
   personagens: Array<Personagem> = []
   personagensAtivos: Array<Personagem> = []
-  audio = new Audio()
+
   constructor(private http: CharactersService) { }
 
   async ngOnInit() {
     await this.getCharacters()
     this.personagensAtivos = this.personagens
-    this.playAudio()
+    this.audio.load()
+    this.audio.volume = 0.4
+    this.audio.loop = true
   }
 
   async ngOnChanges() {
@@ -33,11 +39,9 @@ export class CharacterListComponent implements OnInit, OnChanges {
   }
 
   // Atualiza dinamicamente conforme digita no input de pesquisa
-  onInputChange(value:string)
-  {
+  onInputChange(value: string) {
     this.txtFiltro = value;
-    if(this.txtFiltro == '')
-    {
+    if (this.txtFiltro == '') {
       this.personagensAtivos = this.personagens
     }
     else {
@@ -55,12 +59,13 @@ export class CharacterListComponent implements OnInit, OnChanges {
 
   // Funcao tocar música
   playAudio() {
-    this.audio.src = '../../../../assets/music/genshin ost night.mp3'
-    this.audio.load()
-    this.audio.volume = 0.4
-    this.audio.play()
-  }
-  stopAudio() {
-    this.audio.pause()
+    this.audioTocando = !this.audioTocando
+    if (this.audioTocando) {
+
+      this.audio.play()
+    }
+    if (!this.audioTocando) {
+      this.audio.pause()
+    }
   }
 }

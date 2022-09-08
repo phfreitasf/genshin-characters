@@ -3,40 +3,48 @@
 @import '~tippy.js/dist/tippy.css';
 @import '~tippy.js/themes/light.css';
 @import '~tippy.js/animations/scale.css';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
 
-*, *:before, *:after {
-    box-sizing: border-box;
-    cursor: url('./assets/images/cursor.png'), auto;
-  }
-  
-  body {
-    // background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
-    background: url('https://pbs.twimg.com/media/E2DggP-VgAEWvu6?format=jpg&name=large') no-repeat center center fixed;
-    background-size: cover;
-    font: 14px/20px "Lato", Arial, sans-serif;
-    color: #9E9E9E;
-    margin-top: 30px;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  cursor: url('./assets/images/cursor.png'), auto;
 
-  }
+}
 
-  /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #5b53c6 #2d2a2a;
-  }
+body {
+  // background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background: url('https://pbs.twimg.com/media/E2DggP-VgAEWvu6?format=jpg&name=large') no-repeat center center fixed;
+  background-size: cover;
+  color: #9E9E9E;
+  margin-top: 30px;
+  font-family: 'Roboto Mono', monospace;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
+.modal {
+  background-color: rgba(33, 37, 41, 0.9) !important;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #2d2a2a;
-  }
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #5b53c6 #2d2a2a;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #5b53c6;
-    border-radius: 10px;
-    border: 0px none #ffffff;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #2d2a2a;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #5b53c6;
+  border-radius: 10px;
+  border: 0px none #ffffff;
+}

@@ -12,10 +12,7 @@ $border-radius-size: 14px;
 .wrapper {  
   padding-top: 40px;
   padding-bottom: 40px;
-
 }
-
-
 
 .genshin-card {
   background: white;
@@ -26,7 +23,7 @@ $border-radius-size: 14px;
   position: relative;
   text-align: center;
   box-shadow: -1px 15px 30px -12px black;
-  z-index: 9999;
+  // z-index: 9999;
   transition: 0.2s;
 
   &:hover {
@@ -56,7 +53,7 @@ $border-radius-size: 14px;
 }
 
 
-.genshin-card__level {
+.genshin-card__region {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
@@ -64,17 +61,20 @@ $border-radius-size: 14px;
 }
 
 
-.genshin-card__unit-name {
-  font-size: 26px;
+.genshin-card__char-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
   color: black;
   font-weight: 900;
   margin-bottom: 5px;
 }
 
-.genshin-card__unit-description {
+.genshin-card__char-description {
+  font-size: 13px;
   padding: 20px;
   margin-bottom: 10px;  
   min-height: 200px;
+  max-height: 200px;
 }
 
 
@@ -92,38 +92,19 @@ $border-radius-size: 14px;
     padding: 10px 10px;
   }
   
-  sup {
-    position: absolute;
-    bottom: 4px; 
-    font-size: 45%;
-    margin-left: 2px;
-  }
   
   .stat {
     position: relative;
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
-  .stat-value {
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 12px;
-  }
+
 
   .no-border {
     border-right: none;
   }
 }
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-}
 
 
 // Cidades

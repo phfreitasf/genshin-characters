@@ -21,6 +21,7 @@
     "@ngneat/helipopper": "^5.1.4",
     "@ngneat/overview": "^3.0.4",
     "bootstrap": "^5.2.0",
+    "mdb-angular-ui-kit": "^2.3.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
