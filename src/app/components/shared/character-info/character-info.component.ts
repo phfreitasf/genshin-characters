@@ -15,7 +15,7 @@ export class CharacterInfoComponent implements OnInit {
   constructor(private modalService: MdbModalService) { }
 
   async ngOnInit() {
-    this.slugImg += (this.personagem.fullname.split(' ').join(''))
+    this.slugImg += (this.personagem.fullname.split(' ').join('').toLowerCase())
 
   }
 
