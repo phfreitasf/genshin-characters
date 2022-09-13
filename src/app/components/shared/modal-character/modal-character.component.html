@@ -1,15 +1,73 @@
-<div class="modal-header">
-  <h5 class="modal-title">{{personagem.fullname}}</h5>
-  <button
-    type="button"
-    class="btn-close"
-    aria-label="Close"
-    (click)="modalRef.close()"
-  ></button>
+<div class="modal-header" [ngClass]="{
+  'anemo-bg' : personagem.element == 'Anemo',
+  'cryo-bg' : personagem.element == 'Cryo',
+  'dendro-bg' : personagem.element == 'Dendro',
+  'electro-bg' : personagem.element == 'Electro',
+  'geo-bg' : personagem.element == 'Geo',
+  'hydro-bg' : personagem.element == 'Hydro',
+  'pyro-bg' : personagem.element == 'Pyro',
+  'traveler-bg' : personagem.element == 'Indisponível'
+}">
+  <section class="row">
+    <h5 class="text-white genshin-card__char-name col-md-auto">{{personagem.fullname}}</h5>
+  </section>
+  <button type="button" class="btn-close" aria-label="Fechar" (click)="modalRef.close()"></button>
 </div>
-<div class="modal-body">asdasdasdasd</div>
+<div class="modal-body">
+  <section class="row row-cols-2 justify-content-center">
+    <div class="col-auto img-modal text-center">
+      <img [src]="personagem.images['icon']" [alt]="personagem.fullname">
+      <p>Foto do RG</p>
+    </div>
+    <div class="col-9">
+      <p>Nome completo: <span class="text-dark">{{personagem.fullname}}</span></p>
+      <p>Lançado na versão: <span class="text-dark">{{personagem.version}}</span></p>
+      <p>Gênero: <span class="text-dark">{{personagem.gender}}</span></p>
+      <p>Título: <span class="text-dark">{{personagem.title}}</span></p>
+      <p>Cidade: <span class="text-dark">{{personagem.region}}</span></p>
+      <p>Constelação: <span class="text-dark">{{personagem.constellation}}</span></p>
+      <p>Descrição: <span class="text-dark">{{personagem.description}}</span></p>
+      <p>Aniversário: <span class="text-dark">{{personagem.birthday || 'Desconhecido'}}</span></p>
+
+
+      <mdb-tabs class="text-dark">
+        <mdb-tab title="Ascensão 1">
+          <p *ngFor="let item of personagem.costs.ascend1">{{item.count}}x {{item.name}}</p>
+        </mdb-tab>
+        <mdb-tab title="Ascensão 2">
+          <p *ngFor="let item of personagem.costs.ascend2">{{item.count}}x {{item.name}}</p>
+        </mdb-tab>
+        <mdb-tab title="Ascensão 3">
+          <p *ngFor="let item of personagem.costs.ascend3">{{item.count}}x {{item.name}}</p>
+        </mdb-tab>
+        <mdb-tab title="Ascensão 4">
+          <p *ngFor="let item of personagem.costs.ascend4">{{item.count}}x {{item.name}}</p>
+        </mdb-tab>
+        <mdb-tab title="Ascensão 5">
+          <p *ngFor="let item of personagem.costs.ascend5">{{item.count}}x {{item.name}}</p>
+        </mdb-tab>
+        <mdb-tab title="Ascensão 6">
+          <p *ngFor="let item of personagem.costs.ascend6">{{item.count}}x {{item.name}}</p>
+        </mdb-tab>
+
+      </mdb-tabs>
+
+    </div>
+  </section>
+
+
+</div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
+  <button [ngClass]="{
+    'anemo-bg' : personagem.element == 'Anemo',
+    'cryo-bg' : personagem.element == 'Cryo',
+    'dendro-bg' : personagem.element == 'Dendro',
+    'electro-bg' : personagem.element == 'Electro',
+    'geo-bg' : personagem.element == 'Geo',
+    'hydro-bg' : personagem.element == 'Hydro',
+    'pyro-bg' : personagem.element == 'Pyro',
+    'traveler-bg' : personagem.element == 'Indisponível'
+  }" type="button" class="btn btn-secondary" (click)="modalRef.close()">
     Fechar
   </button>
 </div>

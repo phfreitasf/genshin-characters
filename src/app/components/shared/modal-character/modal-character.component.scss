@@ -1,0 +1,19 @@
+@import url("../character-info/character-info.component.scss");
+
+.nav-link {
+    color : red!important
+}
+.img-modal {
+    img {
+        min-width: 250px;
+        max-width: 250px;
+    }
+}
+
+
+div.tab-pane {
+    color:red;
+    p{
+        color: yellow!important;
+    }
+}

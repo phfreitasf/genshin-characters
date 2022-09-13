@@ -1,27 +1,24 @@
 <div class="wrapper">
   <div class="genshin-card bg-light" (click)="openModal(personagem)">
-    <div 
-    [ngClass]="{
+    <div [ngClass]="{
       'mondstadt' : personagem.region == 'Mondstadt',
       'inazuma' : personagem.region == 'Inazuma',
       'liyue' : personagem.region == 'Liyue',
       'sumeru' : personagem.region == 'Sumeru',
       'snezhnaya' : personagem.region == 'Snezhnaya',
       'none' : personagem.region == ''
-      }"
-    class="genshin-card__image genshin-card__image--character" 
-    >
-      <img [src]="personagem.images['portrait'] || personagem.images['cover1'] || personagem.images['hoyolab-avatar']  "
+      }" class="genshin-card__image genshin-card__image--character">
+      <img [className]="['genshin-card__char-img ' + slugImg ]"
+        [src]="personagem.images['portrait'] || personagem.images['cover1'] || personagem.images['hoyolab-avatar']  "
         [alt]="personagem.fullname" />
     </div>
-    <div class="genshin-card__char-name">{{personagem.fullname}}</div>
-    <div class="genshin-card__region">Cidade: {{personagem.region || 'Desconhecido'}}</div>
-    <div class="genshin-card__char-description">
+    <div class="genshin-card__char-name zindex-2">{{personagem.fullname}}</div>
+    <div class="genshin-card__region zindex-2">Cidade: {{personagem.region || 'Desconhecido'}}</div>
+    <div class="genshin-card__char-description zindex-2">
       {{personagem.description}}
     </div>
 
-    <div class="genshin-card__unit-stats clearfix"
-    [ngClass]="{
+    <div class="genshin-card__unit-stats clearfix" [ngClass]="{
         'anemo-bg' : personagem.element == 'Anemo',
         'cryo-bg' : personagem.element == 'Cryo',
         'dendro-bg' : personagem.element == 'Dendro',
@@ -32,9 +29,7 @@
         'traveler-bg' : personagem.element == 'Indisponível'
     }">
       <div class="one-third">
-          <div class="stat elem-size ms-2 py-0"
-          [tippy]="personagem.element"
-          [ngClass]="{
+        <div class="stat elem-size ms-2 py-0" [tippy]="personagem.element" [ngClass]="{
             'anemo' : personagem.element == 'Anemo',
             'cryo' : personagem.element == 'Cryo',
             'dendro' : personagem.element == 'Dendro',
@@ -47,9 +42,7 @@
       </div>
 
       <div class="one-third">
-        <div class="stat elem-size ms-2 py-0"
-        [tippy]="personagem.weapontype"
-        [ngClass]="{
+        <div class="stat elem-size ms-2 py-0" [tippy]="personagem.weapontype" [ngClass]="{
         'arco' : personagem.weapontype == 'Arco',
         'catalisador' : personagem.weapontype == 'Catalisador',
         'espadao' : personagem.weapontype == 'Espadão',

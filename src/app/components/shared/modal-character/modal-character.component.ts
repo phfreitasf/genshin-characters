@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Personagem } from 'src/app/services/Model/Characters';
 import { MdbModalRef } from 'mdb-angular-ui-kit/modal';
 
+
 @Component({
   selector: 'app-modal-character',
   templateUrl: './modal-character.component.html',

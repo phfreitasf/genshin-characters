@@ -23,7 +23,6 @@ $border-radius-size: 14px;
   position: relative;
   text-align: center;
   box-shadow: -1px 15px 30px -12px black;
-  // z-index: 9999;
   transition: 0.2s;
 
   &:hover {
@@ -48,7 +47,7 @@ $border-radius-size: 14px;
     height: 120%;
     top:-20%;
     position: relative;    
-    max-width: 100%;
+    max-width: 110%;
   }
 }
 
@@ -63,7 +62,7 @@ $border-radius-size: 14px;
 
 .genshin-card__char-name {
   font-family: 'Dancing Script', cursive;
-  font-size: 40px;
+  font-size: 38px;
   color: black;
   font-weight: 900;
   margin-bottom: 5px;
@@ -179,7 +178,7 @@ $border-radius-size: 14px;
 
 //Cor stats
 .anemo-bg {
-  background-color: #515847;
+  background-color: #709b77;
 }
 .cryo-bg {
   background-color: #0f5390;

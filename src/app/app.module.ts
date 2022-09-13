@@ -8,7 +8,7 @@ import { CharactersService } from './services/characters.service';
 import { AppRoutingModule } from './app-routing.module';
 import { CharacterListComponent } from './components/shared/character-list/character-list.component';
 import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
-
+import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { TippyModule, tooltipVariation, popperVariation } from '@ngneat/helipopper';
 import { FormsModule } from '@angular/forms';
 import { ModalCharacterComponent } from './components/shared/modal-character/modal-character.component';
@@ -26,6 +26,7 @@ import { ModalCharacterComponent } from './components/shared/modal-character/mod
     MdbModalModule,
     HttpClientModule,
     AppRoutingModule,
+    MdbTabsModule,
     TippyModule.forRoot({
     defaultVariation: 'tooltip',
     variations: {

@@ -11,15 +11,17 @@ import { ModalCharacterComponent } from '../modal-character/modal-character.comp
 export class CharacterInfoComponent implements OnInit {
   modalRef: MdbModalRef<ModalCharacterComponent> | null = null;
   @Input() personagem!: Personagem
-
+  slugImg: string = 'char-image-'
   constructor(private modalService: MdbModalService) { }
 
   async ngOnInit() {
+    this.slugImg += (this.personagem.fullname.split(' ').join(''))
+
   }
 
   openModal(personagem: Personagem) {
     this.modalRef = this.modalService.open(ModalCharacterComponent, {
-      data : {personagem : personagem},
+      data: { personagem: personagem },
       modalClass: 'modal-xl bg-dark'
     },
     )
