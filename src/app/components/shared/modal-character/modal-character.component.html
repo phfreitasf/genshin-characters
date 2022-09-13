@@ -20,13 +20,13 @@
       <p>Foto do RG</p>
     </div>
     <div class="col-9">
-      <p>Nome completo: <span class="text-dark">{{personagem.fullname}}</span></p>
-      <p>Lançado na versão: <span class="text-dark">{{personagem.version}}</span></p>
-      <p>Gênero: <span class="text-dark">{{personagem.gender}}</span></p>
-      <p>Título: <span class="text-dark">{{personagem.title}}</span></p>
-      <p>Cidade: <span class="text-dark">{{personagem.region}}</span></p>
-      <p>Constelação: <span class="text-dark">{{personagem.constellation}}</span></p>
-      <p>Descrição: <span class="text-dark">{{personagem.description}}</span></p>
+      <p>Nome completo: <span class="text-dark">{{personagem.fullname || 'Desconhecido'}}</span></p>
+      <p>Lançado na versão: <span class="text-dark">{{personagem.version || 'Desconhecido'}}</span></p>
+      <p>Gênero: <span class="text-dark">{{personagem.gender || 'Desconhecido'}}</span></p>
+      <p>Título: <span class="text-dark">{{personagem.title || 'Desconhecido'}}</span></p>
+      <p>Cidade: <span class="text-dark">{{personagem.region || 'Desconhecido'}}</span></p>
+      <p>Constelação: <span class="text-dark">{{personagem.constellation || 'Desconhecido'}}</span></p>
+      <p>Descrição: <span class="text-dark">{{personagem.description || 'Desconhecido'}}</span></p>
       <p>Aniversário: <span class="text-dark">{{personagem.birthday || 'Desconhecido'}}</span></p>
 
 
