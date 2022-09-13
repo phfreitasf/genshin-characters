@@ -1,25 +1,25 @@
 {
-  "name": "Ganyu",
-  "fullname": "Ganyu",
-  "title": "Defensora Devota",
-  "description": "Secretária do Pavilhão Yuehai. O sangue da besta iluminada Qilin flui nas suas veias.",
+  "name": "Aloy",
+  "fullname": "Aloy",
+  "title": "Salvadora de Outro Mundo",
+  "description": "Era uma pária, agora uma caçadora de uma avidez inigualável. Pronta para fazer a coisa certa com seu arco, a qualquer momento.",
   "rarity": "5",
   "element": "Cryo",
   "weapontype": "Arco",
-  "substat": "Dano Crítico",
+  "substat": "Bônus de Dano Cryo",
   "gender": "Feminino",
   "body": "GIRL",
-  "association": "LIYUE",
-  "region": "Liyue",
-  "affiliation": "Pavilhão Yuehai",
-  "birthdaymmdd": "12/2",
-  "birthday": "2 de dezembro",
-  "constellation": "Sinae Unicornis",
+  "association": "RANGER",
+  "region": "",
+  "affiliation": "Cavaleiro Errante",
+  "birthdaymmdd": "4/4",
+  "birthday": "4 de abril",
+  "constellation": "Norta Fortis",
   "cv": {
-    "english": "Jennifer Losi",
-    "chinese": "林簌",
-    "japanese": "上田丽奈",
-    "korean": "Kim Seon-hye"
+    "english": "——",
+    "chinese": "沐霏",
+    "japanese": "高垣彩陽",
+    "korean": "Jo Hyeon-jung"
   },
   "costs": {
     "ascend1": [{
@@ -29,10 +29,10 @@
       "name": "Lasca de Jade Shivada",
       "count": 1
     }, {
-      "name": "Qingxin",
+      "name": "Medula de Cristal",
       "count": 3
     }, {
-      "name": "Néctar da Flor Gigante",
+      "name": "Casca Espectral",
       "count": 3
     }],
     "ascend2": [{
@@ -42,13 +42,13 @@
       "name": "Fragmento de Jade Shivada",
       "count": 3
     }, {
-      "name": "Núcleo de Geada",
+      "name": "Florescimento Cristalino",
       "count": 2
     }, {
-      "name": "Qingxin",
+      "name": "Medula de Cristal",
       "count": 10
     }, {
-      "name": "Néctar da Flor Gigante",
+      "name": "Casca Espectral",
       "count": 15
     }],
     "ascend3": [{
@@ -58,13 +58,13 @@
       "name": "Fragmento de Jade Shivada",
       "count": 6
     }, {
-      "name": "Núcleo de Geada",
+      "name": "Florescimento Cristalino",
       "count": 4
     }, {
-      "name": "Qingxin",
+      "name": "Medula de Cristal",
       "count": 20
     }, {
-      "name": "Néctar Brilhante",
+      "name": "Coração Espectral",
       "count": 12
     }],
     "ascend4": [{
@@ -74,13 +74,13 @@
       "name": "Pedaço de Jade Shivada",
       "count": 3
     }, {
-      "name": "Núcleo de Geada",
+      "name": "Florescimento Cristalino",
       "count": 8
     }, {
-      "name": "Qingxin",
+      "name": "Medula de Cristal",
       "count": 30
     }, {
-      "name": "Néctar Brilhante",
+      "name": "Coração Espectral",
       "count": 18
     }],
     "ascend5": [{
@@ -90,13 +90,13 @@
       "name": "Pedaço de Jade Shivada",
       "count": 6
     }, {
-      "name": "Núcleo de Geada",
+      "name": "Florescimento Cristalino",
       "count": 12
     }, {
-      "name": "Qingxin",
+      "name": "Medula de Cristal",
       "count": 45
     }, {
-      "name": "Néctar Elemental",
+      "name": "Núcleo Espectral",
       "count": 12
     }],
     "ascend6": [{
@@ -106,32 +106,29 @@
       "name": "Gema de Jade Shivada",
       "count": 6
     }, {
-      "name": "Núcleo de Geada",
+      "name": "Florescimento Cristalino",
       "count": 20
     }, {
-      "name": "Qingxin",
+      "name": "Medula de Cristal",
       "count": 60
     }, {
-      "name": "Néctar Elemental",
+      "name": "Núcleo Espectral",
       "count": 24
     }]
   },
   "images": {
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Ganyu_Portrait.png",
-    "icon": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ganyu.png",
-    "sideicon": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ganyu.png",
-    "cover1": "https://webstatic.hoyoverse.com/upload/contentweb/2022/07/22/1ae0d0aaad9ee9b55652ea7ec67f0465_3602224572622981451.png",
-    "cover2": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210105/2021010519280045054.png",
-    "hoyolab-avatar": "https://img-os-static.hoyolab.com/communityWeb/upload/4af4adf192a35db2dd76d9718acc7bc8.png",
-    "nameicon": "UI_AvatarIcon_Ganyu",
-    "nameiconcard": "UI_AvatarIcon_Ganyu_Card",
-    "namegachasplash": "UI_Gacha_AvatarImg_Ganyu",
-    "namegachaslice": "UI_Gacha_AvatarIcon_Ganyu",
-    "namesideicon": "UI_AvatarIcon_Side_Ganyu"
+    "cover1": "https://webstatic.hoyoverse.com/upload/contentweb/2022/07/22/9344fdabebf5e14d8ecaf34253d838c0_5896806722384038228.png",
+    "cover2": "https://webstatic.hoyoverse.com/upload/contentweb/2022/07/20/8ef5a843157d2bba1073f1f15e99ab88_559558664955241387.png",
+    "icon": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Aloy.png",
+    "sideicon": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Aloy.png",
+    "nameicon": "UI_AvatarIcon_Aloy",
+    "nameiconcard": "UI_AvatarIcon_Aloy_Card",
+    "namegachasplash": "UI_Gacha_AvatarImg_Aloy",
+    "namegachaslice": "UI_Gacha_AvatarIcon_Aloy",
+    "namesideicon": "UI_AvatarIcon_Side_Aloy"
   },
   "url": {
-    "fandom": "https://genshin-impact.fandom.com/wiki/Ganyu"
+    "fandom": "https://genshin-impact.fandom.com/wiki/Aloy"
   },
-  "version": "1.2"
+  "version": "2.1"
 }
