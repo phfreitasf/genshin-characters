@@ -36,6 +36,8 @@ export interface Costs {
 export interface Ascend {
     name:  string;
     count: number;
+    image?: string;
+    source: Array<string>
 }
 
 export interface Cv {

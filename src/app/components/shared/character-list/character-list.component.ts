@@ -23,7 +23,7 @@ export class CharacterListComponent implements OnInit, OnChanges {
     await this.getCharacters()
     this.personagensAtivos = this.personagens
     this.audio.load()
-    this.audio.volume = 0.4
+    this.audio.volume = 1
     this.audio.loop = true
   }
 

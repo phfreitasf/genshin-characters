@@ -7,11 +7,15 @@ import { environment } from '../../environments/environment';
 })
 export class CharactersService {
   
-  // apiUrl = 'https://genshinapi.ddns.net:3000/'
+  // localApiUrl = 'http://localhost:3001/'
 
   constructor(private http: HttpClient) { }
 
   getCharacters (){
     return this.http.get(`${environment.apiUrl}character/`)
+  }
+
+  getMaterialImg (material:string) {
+    return this.http.get(`${environment.apiUrl}ascend/${material}`)
   }
 }
