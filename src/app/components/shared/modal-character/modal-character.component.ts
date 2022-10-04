@@ -10,30 +10,29 @@ import { lastValueFrom } from 'rxjs';
   templateUrl: './modal-character.component.html',
   styleUrls: ['./modal-character.component.scss']
 })
-export class ModalCharacterComponent  implements  AfterContentInit {
+export class ModalCharacterComponent implements AfterContentInit {
 
+  placeholder = '/assets/images/Image_placeholder.jpg'
   personagem !: Personagem
-  
-  constructor(public modalRef: MdbModalRef<ModalCharacterComponent>, private api : CharactersService) {}
+
+  constructor(public modalRef: MdbModalRef<ModalCharacterComponent>, private api: CharactersService) { }
 
   async ngAfterContentInit() {
     await this.buscaImagensMateriais()
   }
 
-  async buscaImagensMateriais()
-  {
-     Object.values(this.personagem.costs).forEach((val : any) => {
-      val.map((material : any) => {
-        if (material.image == '' || !material.image)
-        {
-          lastValueFrom(this.api.getMaterialImg(material.name)).then((res : any) => {
+  async buscaImagensMateriais() {
+    Object.values(this.personagem.costs).forEach((val: any) => {
+      val.map((material: any) => {
+        if (material.image == '' || !material.image) {
+          lastValueFrom(this.api.getMaterialImg(material.name)).then((res: any) => {
             material.image = res.images.fandom
             material.source = res.source
           })
         }
       })
     })
-    
-   
+
+
   }
 }

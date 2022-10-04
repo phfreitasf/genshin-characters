@@ -32,22 +32,22 @@
 
       <mdb-tabs class="text-dark">
         <mdb-tab title="Ascensão 1">
-          <p class="my-0" *ngFor="let item of personagem.costs.ascend1" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image" />{{item.count}}x {{item.name}}</p>
+          <p class="my-0" *ngFor="let item of personagem.costs.ascend1" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image || placeholder" />{{item.count}}x {{item.name}}</p>
         </mdb-tab>
         <mdb-tab title="Ascensão 2">
-          <p class="my-0" *ngFor="let item of personagem.costs.ascend2" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image" />{{item.count}}x {{item.name}}</p>
+          <p class="my-0" *ngFor="let item of personagem.costs.ascend2" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image || placeholder" />{{item.count}}x {{item.name}}</p>
         </mdb-tab>
         <mdb-tab title="Ascensão 3">
-          <p class="my-0" *ngFor="let item of personagem.costs.ascend3" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image" />{{item.count}}x {{item.name}}</p>
+          <p class="my-0" *ngFor="let item of personagem.costs.ascend3" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image || placeholder" />{{item.count}}x {{item.name}}</p>
         </mdb-tab>
         <mdb-tab title="Ascensão 4">
-          <p class="my-0" *ngFor="let item of personagem.costs.ascend4" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image" />{{item.count}}x {{item.name}}</p>
+          <p class="my-0" *ngFor="let item of personagem.costs.ascend4" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image || placeholder" />{{item.count}}x {{item.name}}</p>
         </mdb-tab>
         <mdb-tab title="Ascensão 5">
-          <p class="my-0" *ngFor="let item of personagem.costs.ascend5" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image" />{{item.count}}x {{item.name}}</p>
+          <p class="my-0" *ngFor="let item of personagem.costs.ascend5" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image || placeholder" />{{item.count}}x {{item.name}}</p>
         </mdb-tab>
         <mdb-tab title="Ascensão 6">
-          <p class="my-0" *ngFor="let item of personagem.costs.ascend6" [tippy]='item.source.join("\r\n")' placement="left"><img class="material-img" [src]="item.image" />{{item.count}}x {{item.name}}</p>
+          <p class="my-0" *ngFor="let item of personagem.costs.ascend6" [tippy]='item.source.join("\r\n\<br>")' placement="left"><img class="material-img" [src]="item.image || placeholder" />{{item.count}}x {{item.name}}</p>
         </mdb-tab>
 
       </mdb-tabs>
